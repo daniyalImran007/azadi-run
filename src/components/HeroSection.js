@@ -48,7 +48,7 @@ const Slide = styled.div`
 const SlideContent = styled.div`
   position: relative;
   z-index: 2;
-  max-width: 800px;
+  max-width: 900px;
   color: white;
   text-align: center;
 
