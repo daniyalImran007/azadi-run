@@ -61,8 +61,8 @@ function EventDetails() {
       <Container>
         <Badge>More Than a Race</Badge>
         <Title>
-          <span>A CELEBRATION OF FREEDOM,</span> fitness and the spirit of
-          Pakistan.
+          <span>A CELEBRATION OF FREEDOM,</span> FITNESS AND THE SPIRIT OF
+          PAKISTAN.
         </Title>
         <Description>
           Welcome to Azadi Run - the premier celebration of spirit, endurance,

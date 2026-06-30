@@ -124,7 +124,7 @@ function Header() {
       <Nav>
         <NavLink href="#about">About</NavLink>
         <NavLink href="#tickets">Tickets</NavLink>
-        <NavLink href="#gallery">Gallery</NavLink>
+        <NavLink href="#gallery">VISION</NavLink>
         <RegisterNavBtn
           href="https://docs.google.com/forms/d/e/1FAIpQLSc5Jw0nEzb9aLGqKc-9H31kaYmi9xFigIfvNMkH4JXigooMEw/viewform"
           target="_blank"
