@@ -183,7 +183,7 @@ function HeroSection() {
               <h1>
                 Every Step Celebrates
                 <br />
-                <span className="highlight">FREEDOM</span>
+                <span>FREEDOM</span>
               </h1>
               <CTAButton
                 href={registerLink}
