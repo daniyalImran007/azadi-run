@@ -140,7 +140,7 @@ function GallerySection() {
         <Header>
           <Badge>What’s to Come</Badge>
           <Title>
-            The <span> Vision</span>
+            THE <span> VISION</span>
           </Title>
           <Subtitle>
             A visual journey into the energy, atmosphere, and community we are

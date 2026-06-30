@@ -99,7 +99,7 @@ function TicketsSection() {
         <Header>
           <Badge>Choose Your Race</Badge>
           <Title>
-            Find Your <span>Distance</span>
+            FIND YOUR <span>DISTANCE</span>
           </Title>
           <Subtitle>
             Select the race that matches your spirit and challenge yourself

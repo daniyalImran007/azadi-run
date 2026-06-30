@@ -64,17 +64,6 @@ const SlideContent = styled.div`
     .highlight {
       color: #f8e531;
       position: relative;
-
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: 5px;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background: #f8e531;
-        opacity: 0.5;
-      }
     }
 
     @media (max-width: 768px) {
@@ -181,9 +170,9 @@ function HeroSection() {
           <Slide key={idx} image={src}>
             <SlideContent>
               <h1>
-                Every Step Celebrates
+                EVERY STEP CELEBRATES
                 <br />
-                <span>FREEDOM</span>
+                <span className="highlight">FREEDOM</span>
               </h1>
               <CTAButton
                 href={registerLink}

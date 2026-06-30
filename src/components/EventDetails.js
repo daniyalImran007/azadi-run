@@ -61,7 +61,7 @@ function EventDetails() {
       <Container>
         <Badge>More Than a Race</Badge>
         <Title>
-          <span>A celebration of freedom,</span> fitness and the spirit of
+          <span>A CELEBRATION OF FREEDOM,</span> fitness and the spirit of
           Pakistan.
         </Title>
         <Description>
