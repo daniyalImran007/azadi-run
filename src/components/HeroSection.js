@@ -9,6 +9,11 @@ const HeroContainer = styled.section`
   overflow: hidden;
   background: #0d1d14;
   margin-top: -1px;
+
+  @media (max-width: 768px) {
+    height: 70vh;
+    min-height: 450px;
+  }
 `;
 
 const SlidesWrapper = styled.div`
@@ -39,18 +44,37 @@ const Slide = styled.div`
     background: linear-gradient(
       135deg,
       rgba(7, 83, 45, 0.85) 0%,
-      rgba(0, 0, 0, 0.6) 100%
+      rgba(0, 0, 0, 0.7) 100%
     );
     z-index: 1;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 5%;
+    background-position: center 30%; /* Shift image focus higher */
   }
 `;
 
 const SlideContent = styled.div`
   position: relative;
   z-index: 2;
-  max-width: 900px;
+  max-width: 800px;
   color: white;
   text-align: center;
+
+  .badge {
+    display: inline-block;
+    background: rgba(248, 229, 49, 0.15);
+    border: 1px solid #f8e531;
+    padding: 0.3rem 1.2rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #f8e531;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+  }
 
   h1 {
     font-size: 4.2rem;
@@ -58,16 +82,31 @@ const SlideContent = styled.div`
     line-height: 1.2;
     margin-bottom: 1.2rem;
     text-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
-    span {
-      font-size: 6rem;
-    }
+
     .highlight {
       color: #f8e531;
       position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: #f8e531;
+        opacity: 0.5;
+      }
     }
 
     @media (max-width: 768px) {
-      font-size: 2.5rem;
+      font-size: 2.2rem;
+      line-height: 1.3;
+      margin-bottom: 1rem;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 1.8rem;
     }
   }
 
@@ -80,6 +119,12 @@ const SlideContent = styled.div`
 
     @media (max-width: 768px) {
       font-size: 1rem;
+      margin: 0 auto 1.8rem;
+      max-width: 90%;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 0.9rem;
     }
   }
 `;
@@ -110,6 +155,18 @@ const CTAButton = styled.a`
     transform: translateY(-3px);
     box-shadow: 0 12px 40px rgba(248, 229, 49, 0.15);
   }
+
+  @media (max-width: 768px) {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+    width: 80%;
+    max-width: 280px;
+  }
 `;
 
 const Controls = styled.div`
@@ -121,6 +178,11 @@ const Controls = styled.div`
   justify-content: center;
   gap: 16px;
   z-index: 10;
+
+  @media (max-width: 768px) {
+    bottom: 1.5rem;
+    gap: 12px;
+  }
 `;
 
 const Dot = styled.button`
@@ -137,18 +199,14 @@ const Dot = styled.button`
   &:hover {
     transform: scale(1.2);
   }
+
+  @media (max-width: 768px) {
+    width: 10px;
+    height: 10px;
+  }
 `;
 
-// Updated to use local images from public folder
-const heroImages = [
-  "/cover1.png",
-  "/cover2.png",
-  "/cover3.png",
-  "/cover4.png",
-  "/cover5.png",
-  "/cover6.png",
-  "/cover7.png",
-];
+const heroImages = ["/cover1.png", "/cover2.png", "/cover3.png"];
 
 function HeroSection() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -170,9 +228,9 @@ function HeroSection() {
           <Slide key={idx} image={src}>
             <SlideContent>
               <h1>
-                EVERY STEP CELEBRATES
+                Every Step Celebrates
                 <br />
-                <span className="highlight">FREEDOM</span>
+                <span className="highlight">Freedom</span>
               </h1>
               <CTAButton
                 href={registerLink}
