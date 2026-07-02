@@ -230,7 +230,7 @@ function Header() {
             Tickets
           </NavLink>
           <NavLink href="#gallery" onClick={handleLinkClick}>
-            Gallery
+            Vision
           </NavLink>
           {/* Desktop Register Button - only visible on desktop */}
           <DesktopRegisterBtn
