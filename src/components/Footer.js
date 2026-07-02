@@ -134,7 +134,7 @@ function Footer() {
           <h4>Quick Links</h4>
           <a href="#about">About</a>
           <a href="#tickets">Tickets</a>
-          <a href="#gallery">Gallery</a>
+          <a href="#gallery">Vision</a>
         </Links>
         <Socials>
           <h4>Connect With Us</h4>
